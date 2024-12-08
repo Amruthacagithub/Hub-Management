@@ -1,0 +1,203 @@
+/* General Container Styles */
+.vehicle-states-container {
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styles */
+h2 {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Search and Filter Section */
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-section {
+    flex: 1;
+}
+
+.search-section label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.search-section input {
+    padding: 8px 12px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    outline: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.search-section input:focus {
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+    border-color: #3498db;
+}
+
+.filter-section {
+    flex: 1;
+    text-align: right;
+}
+
+.filter-section label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.filter-section select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    outline: none;
+    background-color: #ffffff;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.filter-section select:focus {
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.7);
+    border-color: #27ae60;
+}
+
+/* Table Section */
+.vehicle-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-table th,
+.vehicle-table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.vehicle-table th {
+    background-color: #34495e;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vehicle-table td {
+    background-color: #ffffff;
+    color: #2c3e50;
+}
+
+.vehicle-table tr:nth-child(even) td {
+    background-color: #f4f6f8;
+}
+
+.vehicle-table td:hover {
+    background-color: #e8f8ff;
+    cursor: default;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1f618d;
+    transform: translateY(0);
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Pagination Section */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 14px;
+    margin: 0 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.pagination button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.pagination button.active {
+    background-color: #27ae60;
+    font-weight: bold;
+    transform: translateY(0);
+}
+
+.pagination button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-filter-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-bar input,
+    .filter-bar select {
+        width: 100%;
+    }
+
+    .vehicle-table th,
+    .vehicle-table td {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.85rem;
+    }
+
+    .pagination button {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}
